@@ -5,6 +5,6 @@ y = [0.0, -2.0, 1.5, 2.5]
 z = [0.0, 2.0, -3.0, -1.5]
 
 dist = []
-for n in range(min(len(x), len(y), len(z))):
-    dist.append(sqrt(x[n]**2 + y[n]**2 + z[n]**2))
+for x_val, y_val, z_val in zip(x, y, z):
+    dist.append(sqrt(x_val**2 + y_val**2 + z_val**2))
 print("Расстояния: ", dist)
