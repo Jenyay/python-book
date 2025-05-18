@@ -1,0 +1,23 @@
+[project]
+name = "hello"
+version = "0.1.0"
+description = "Hello world project"
+authors = [
+    {name = "Eugene Ilin"}
+]
+license = {text = "GPL-3"}
+readme = "README.md"
+requires-python = "^3.13"
+dependencies = [
+    "numpy (>=2.2.5,<3.0.0)",
+    "matplotlib (>=3.10.3,<4.0.0)"
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
