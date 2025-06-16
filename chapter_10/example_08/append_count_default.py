@@ -11,4 +11,5 @@ spam = append_count([10, 20, 30])
 
 print(f"{foo=}")
 print(f"{bar=}")
+print(f"{foo is bar=}")
 print(f"{spam=}")

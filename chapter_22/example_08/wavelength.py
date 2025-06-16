@@ -8,13 +8,13 @@ if __name__ == "__main__":
     parser.add_argument("-m", "--mu", type=float, default=1.0)
     parser.add_argument("-v", action="store_true")
 
-    namespace = parser.parse_args()
-    print(f"{namespace=}")
+    args = parser.parse_args()
+    print(f"{args=}")
 
-    freq = namespace.freq
-    eps = namespace.eps
-    mu = namespace.mu
-    verbose = namespace.v
+    freq = args.freq
+    eps = args.eps
+    mu = args.mu
+    verbose = args.v
 
     # Скорость света в вакууме в м/с
     c = 299792458

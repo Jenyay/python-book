@@ -8,14 +8,14 @@ if __name__ == "__main__":
     parser.add_argument("-e", "--eps")
     parser.add_argument("-m", "--mu")
 
-    namespace = parser.parse_args()
-    print(f"{namespace=}")
+    args = parser.parse_args()
+    print(f"{args=}")
 
-    freq = (float(namespace.freq)if namespace.freq is not None
+    freq = (float(args.freq)if args.freq is not None
             else None)
-    eps = (float(namespace.eps) if namespace.eps is not None
+    eps = (float(args.eps) if args.eps is not None
            else 1.0)
-    mu = (float(namespace.mu) if namespace.mu is not None
+    mu = (float(args.mu) if args.mu is not None
           else 1.0)
 
     if freq is None:
