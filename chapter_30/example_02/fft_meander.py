@@ -6,10 +6,10 @@ from scipy.fft import fft
 def meander(time: npt.NDArray, duty: float, period: float) -> npt.NDArray:
     """Функция генерации последовательности прямоугольных импульсов."""
     s = np.zeros_like(time)
-    newtime = (
+    triangle = (
         np.arcsin(np.sin(2.0 * np.pi / period * time + np.pi / 2)) /
         np.pi + 0.5)
-    s[newtime < duty] = 1
+    s[triangle < duty] = 1
     return s
 
 if __name__ == "__main__":
