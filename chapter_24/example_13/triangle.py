@@ -36,7 +36,7 @@ class Triangle:
 
         p1 = self._vertices[index1]
         p2 = self._vertices[index2]
-        return math.sqrt((p1[0] - p2[0])**2 + (p1[1] - p2[1])**2)
+        return math.hypot(p1[0] - p2[0], p1[1] - p2[1])
 
     def square(self) -> float:
         """Расчет площади треугольника.
