@@ -7,4 +7,4 @@ z = [0.0, 2.0, -3.0, -1.5]
 dist = []
 for x_val, y_val, z_val in zip(x, y, z):
     dist.append(sqrt(x_val**2 + y_val**2 + z_val**2))
-print("Расстояния: ", dist)
+print("Расстояния:", dist)
