@@ -1,6 +1,6 @@
 import h5py
 
-filename = "example_26_10.h5"
+filename = "example_26_11.h5"
 
 with h5py.File(filename, "r") as f:
     print("Описание:", f.attrs["description"])
