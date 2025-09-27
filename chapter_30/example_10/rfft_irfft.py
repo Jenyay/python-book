@@ -38,7 +38,7 @@ if __name__ == "__main__":
     ax_signal = fig.add_subplot(2, 1, 1)
     ax_signal.plot(time / 1e-9, signal, "-b",
                    label="Исходный сигнал")
-    ax_signal.plot(time / 1e-9, signal_filter, "-r",
+    ax_signal.plot(time / 1e-9, signal_filter, "--k",
                    label="Cигнал после фильтрации")
     ax_signal.set_title("Сигнал")
     ax_signal.set_xlabel("Время, нс")
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     ax_spectrum_mag = fig.add_subplot(2, 1, 2)
     ax_spectrum_mag.plot(freq / 1e9, spectrum_src_mag, "-b",
                          label="Исходный спектр")
-    ax_spectrum_mag.plot(freq / 1e9, spectrum_filter_mag, "-r",
+    ax_spectrum_mag.plot(freq / 1e9, spectrum_filter_mag, "--k",
                          label="Спектр после фильтрации")
     ax_spectrum_mag.set_title("Амплитудный спектр")
     ax_spectrum_mag.set_xlabel("Частота, ГГц")
